@@ -10,6 +10,6 @@ def test_add():
 
 
 def test_sum_1d_array():
-    assert test_sum_1d_array(np.array([1, 2, 3])) == 6.0
-    assert test_sum_1d_array(np.array([10.0])) == 6.0
-    assert test_sum_1d_array(np.array([5.0, 3.5])) == 8.5
+    assert sum_1d_array(np.array([1, 2, 3])) == 6.0
+    assert sum_1d_array(np.array([10.0])) == 10.0
+    assert sum_1d_array(np.array([5.0, 3.5])) == 8.5
