@@ -1,1 +1,1 @@
-from .adding import add
+from .adding import add, sum_1d_array
