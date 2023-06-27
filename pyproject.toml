@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "test-oyster"
-version = "0.1.0"
+version = "0.1.1"
 description = "This is a testing repo. Please ignore."
 authors = ["Ederic Oytas <edericoytas@gmail.com>"]
 license = "MIT"
