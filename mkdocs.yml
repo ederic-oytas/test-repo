@@ -10,7 +10,7 @@ site_author: Ederic Oytas
 theme:
   name: "material"
 
-  # Palette options (light, dark)
+  # Adds an option to change the pallette (light, dark)
   palette:
   
     # Palette toggle for light mode
@@ -27,6 +27,20 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
 
+# Plugins to be used
+plugins:
+
+  # Gives special syntax to generate documentation from docstrings. See
+  # docs/reference.md for an example.
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          options:
+            show_source: False       # Hides source code
+            show_root_heading: True
+  - search  # Builtin plugin which adds a search bar
+
 # Navigation buttons (tab on the left)
 # Format:
 #   - <name>: <source-file>
@@ -40,10 +54,6 @@ markdown_extensions:
   - pymdownx.highlight:   # For highlighting code blocks
       linenums: true
   - pymdownx.superfences  # Makes `highlight` also target ``` blocks
-
-#markdown_extensions:
-#  - pymdownx.highlight:  # provides code color schemes
-#      linenums: True     # turns on line numbers
 
 # If these extra files/folders are updated, then the website created by
 # `mkdocs serve` will be reloaded.
