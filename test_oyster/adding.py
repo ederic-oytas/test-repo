@@ -4,6 +4,14 @@ import numpy as np
 def add(a: int, b: int) -> int:
     """Adds two integers together.
 
+    Example: Example: Adding 3 and 4
+
+        Here's an example of adding integers 3 and 4:
+
+        ```python
+        assert add(3, 4) == 7
+        ```
+
     Args:
         a: First argument.
         b: Second argument.
